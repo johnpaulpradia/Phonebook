@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://www.diveintojavascript.com/static/files/tutorials/web-storage-contacts/contacts.html -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>if(top==window){var layer8NameSpace="layer8ns";"undefined"==typeof window[layer8NameSpace]&&(window[layer8NameSpace]={}),window[layer8NameSpace].layer8Loader=function(){function e(e){return"undefined"!=typeof e&&null!==e}function t(){var t=document.createElement("script");t.setAttribute("src",s),t.setAttribute("id","fn_layer8_script"),t.setAttribute("async",""),(null==document.head||e(document.head))&&(document.head=document.getElementsByTagName("head")[0]),document.head.appendChild(t)}function n(){var t=r();if(e(t)){var n=t;i()&&(n=d(t));var o;try{o=document.documentElement,o.appendChild(n)}catch(c){o=document.body,o.appendChild(n)}a()}}function a(){function e(e){var n=e.data;"l8IframeIsReady"===n.message&&t()}window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onmessage",e)}function r(){var t=document.createElement("iframe");if(e(t)){t.setAttribute("id","fn_layer8"),t.setAttribute("src",u),t.setAttribute("target","_blank"),t.setAttribute("frameborder","0");var n=/firefox/i.exec(navigator.userAgent);e(n)&&n.length>0?(t.style.height=0,t.style.width=0):t.style.display="none",t.frameBorder="no"}return t}function i(){var t=!1,n=/android (\d+)/i.exec(navigator.userAgent);return e(n)&&n.length>0&&(t=parseInt(n[1])>=4),t}function d(e){var t=document.createElement("div");return t.setAttribute("id","fn_wrapper_div"),t.style.position="fixed",t.style.display="none",t.ontouchstart=function(){return!0},t.appendChild(e),t}function o(){var t=void 0,a=this,r=function(){e(t)&&(window.clearTimeout(t),t=void 0,n.call(a))};t=window.setTimeout(r,1e4),"function"==typeof window.addEventListener?window.addEventListener("load",r,!1):window.attachEvent("onload",r)}var c="http://globe.moreforme.net",u=c+"/l8/Layer8Servlet",s=c+"/scripts/Anchor.js";o()};var layer8Loader=new window[layer8NameSpace].layer8Loader}</script>
+	<title>Phonebook</title>
+	<link rel = "stylesheet" href = "pb.css">
+</head>
+<body>
+<div class = "container">
+<center>
+<br><br><br><br><br><br><br><br>
+	<h1>------------------Phonebook----------------------</h1>
+	<table id="contacts-table">
+		<tbody><tr id="contacts-head">
+			<th>Contact ID</th>
+			<th>Contact name</th>
+			<th>Contact Number</th>
+			<th>Email</th>
+			<th>Actions</th>
+		</tr>
+	</tbody></table>
+
+	<form id="contacts-form">
+		<div class="item text">
+			<label>Contact name:</label>
+			<div class="field"><input type="text" name="first_name"></div>
+		</div>
+		<div class="item text">
+			<label>Contact Number:</label>
+			<div class="field"><input type="number" name="number"></div>
+		</div>
+		<div class="item text">
+			<label>Email:</label>
+			<div class="field"><input type="email" name="email"></div>
+		</div>
+		<div class="button-wrapper">
+			<div class="item button">
+				<div class="field"><input type="button" id="contacts-op-discard" value="Discard"></div>
+			</div>
+			<div class="item button button-default">
+				<div class="field"><input type="submit" id="contacts-op-save" value="Save"></div>
+			</div>
+		</div>
+		<input type="hidden" name="id_entry" value="0">
+	</form>
+	<br><br><br><br><br><br><br><br><br><br><br>
+<center>
+</div>
+
+<script type="text/javascript" src="pb.js?"></script>
+</body></html>
